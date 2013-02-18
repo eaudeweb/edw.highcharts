@@ -1,0 +1,2 @@
+""" Highcharts JS lib
+"""

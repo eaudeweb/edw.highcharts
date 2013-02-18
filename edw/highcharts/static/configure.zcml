@@ -1,0 +1,10 @@
+<configure
+  xmlns:browser="http://namespaces.zope.org/browser"
+  i18n_domain="edw">
+
+  <browser:resourceDirectory
+    name="edw.highcharts"
+    directory="2.3.3"
+  />
+
+</configure>
