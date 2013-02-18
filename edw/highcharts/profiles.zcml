@@ -1,0 +1,26 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:five="http://namespaces.zope.org/five"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  i18n_domain="edw">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <genericsetup:registerProfile
+    name="default"
+    title="Eau de Web Highcharts"
+    directory="profiles/default"
+    description="Highcarts JS lib"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+  <genericsetup:registerProfile
+    name="uninstall"
+    title="Remove Eau de Web Highcharts"
+    directory="profiles/uninstall"
+    description="Removes Eau de Web Highcharts from Plone"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+</configure>
